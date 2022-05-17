@@ -1,7 +1,7 @@
 import math
 
 def progress_bar(progress, total):
-  percent = 100 * ( progress / float(total) )
+  percent = (100 / total) * progress
   bar = '#' * int(percent) + '-' * ( 100 - int(percent) )
   # Evaluate expression inside braces at runtime
   print( f"\r|{bar}| {percent:.2f}%", end="\r" )
